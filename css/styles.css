@@ -1,0 +1,65 @@
+/* Paleta de Cores Oficial - Hospeda Salvador */
+:root {
+    --bg-azul-escuro: #002d4b;  /* Azul institucional Hospeda */
+    --accent-dourado: #cca662;  /* Dourado dos detalhes */
+    --texto-claro: #ffffff;
+    --texto-escuro: #212529;
+}
+
+/* Ajustes Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf8f5; /* Bege bem suave para o fundo */
+}
+
+/* Customização da Navbar */
+.navbar-hospeda {
+    background-color: var(--bg-azul-escuro) !important;
+    border-bottom: 3px solid var(--accent-dourado);
+}
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Seção Hero (Apresentação) */
+.hero-bg {
+    background-color: var(--bg-azul-escuro);
+    color: var(--texto-claro);
+    padding: 100px 0;
+    border-bottom: 5px solid var(--accent-dourado);
+}
+.btn-dourado {
+    background-color: var(--accent-dourado);
+    color: var(--bg-azul-escuro) !important;
+    font-weight: bold;
+    border: none;
+}
+.btn-dourado:hover {
+    background-color: #b38f50;
+    transition: 0.3s;
+}
+
+/* Cards das Unidades */
+.card-unidade {
+    border: 1px solid #e0daa0;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.card-unidade:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-dourado);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+.btn-reserva {
+    background-color: var(--bg-azul-escuro);
+    color: var(--texto-claro);
+}
+.btn-reserva:hover {
+    background-color: #001f33;
+    color: var(--accent-dourado);
+}
+
+/* Seção do Guia do Hóspede */
+.bg-guia {
+    background-color: #f0eae1; /* Bege médio */
+    border-left: 5px solid var(--accent-dourado);
+}
