@@ -1,15 +1,14 @@
-/* Paleta de Cores Oficial - Hospeda Salvador */
+/* Paleta de Cores Oficial - Hospeda */
 :root {
-    --bg-azul-escuro: #002d4b;  /* Azul institucional Hospeda */
-    --accent-dourado: #cca662;  /* Dourado dos detalhes */
+    --bg-azul-escuro: #002d4b;  
+    --accent-dourado: #cca662;  
     --texto-claro: #ffffff;
-    --texto-escuro: #212923;
+    --texto-escuro: #212529;
 }
 
-/* Ajustes Gerais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf8f5; /* Bege bem suave para o fundo */
+    background-color: #faf8f5; 
 }
 
 /* Customização da Navbar */
@@ -20,12 +19,18 @@ body {
 .navbar-brand img {
     max-height: 40px;
 }
+.nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.nav-link.active, .nav-link:hover {
+    color: var(--accent-dourado) !important;
+}
 
-/* Seção Hero (Apresentação) */
+/* Seção Hero */
 .hero-bg {
     background-color: var(--bg-azul-escuro);
     color: var(--texto-claro);
-    padding: 100px 0;
+    padding: 80px 0;
     border-bottom: 5px solid var(--accent-dourado);
 }
 .btn-dourado {
@@ -38,28 +43,27 @@ body {
     background-color: #b38f50;
     transition: 0.3s;
 }
+.img-hero {
+    max-height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+.border-dourado {
+    border: 3px solid var(--accent-dourado);
+}
 
-/* Cards das Unidades */
-.card-unidade {
-    border: 1px solid #e0daa0;
-    transition: transform 0.3s, border-color 0.3s;
-}
-.card-unidade:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-dourado);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-.btn-reserva {
-    background-color: var(--bg-azul-escuro);
-    color: var(--texto-claro);
-}
-.btn-reserva:hover {
-    background-color: #001f33;
+/* Elementos da página do Lobby */
+.text-dourado-puro {
     color: var(--accent-dourado);
 }
-
-/* Seção do Guia do Hóspede */
+.card-vantagem {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    transition: transform 0.3s;
+}
+.card-vantagem:hover {
+    transform: translateY(-5px);
+}
 .bg-guia {
-    background-color: #f0eae1; /* Bege médio */
-    border-left: 5px solid var(--accent-dourado);
+    background-color: #f2ebd9;
 }
