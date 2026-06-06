@@ -67,3 +67,65 @@ body {
 .bg-guia {
     background-color: #f2ebd9;
 }
+
+/* --- Estilização Avançada do Portfólio de Unidades --- */
+
+/* Caixa do Card Principal */
+.card-unidade-premium {
+    border-radius: 16px !important;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-unidade-premium:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Container da Foto para colocar a etiqueta por cima */
+.posicao-foto {
+    position: relative;
+}
+
+/* Força as fotos a terem exatamente o mesmo tamanho e não distorcerem */
+.img-custom-portfolio {
+    height: 240px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Etiqueta da Cidade em cima da foto */
+.badge-cidade {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--bg-azul-escuro);
+    color: var(--accent-dourado);
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Botões das unidades*/
+.btn-plataforma {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    padding: 10px 15px !important;
+    text-align: center !important;
+    transition: opacity 0.2s;
+    border: none !important;
+}
+.btn-plataforma:hover {
+    opacity: 0.9;
+    color: #ffffff !important;
+}
+
+/* Aumentar o tamanho do texto da página Quem Somos */
+.texto-sobre p {
+    font-size: 120%; 
+    line-height: 1.7;   
+}
